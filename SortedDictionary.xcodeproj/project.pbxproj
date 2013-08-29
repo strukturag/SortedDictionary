@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		BACDE010100AF6E1004CFB3C /* AvlTree.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDDFF8100AF6E1004CFB3C /* AvlTree.h */; };
+		BACDE011100AF6E1004CFB3C /* AvlTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDDFF9100AF6E1004CFB3C /* AvlTree.m */; };
+		BACDE014100AF6E1004CFB3C /* KeyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDDFFD100AF6E1004CFB3C /* KeyEnumerator.h */; };
+		BACDE015100AF6E1004CFB3C /* KeyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDDFFE100AF6E1004CFB3C /* KeyEnumerator.m */; };
+		BACDE016100AF6E1004CFB3C /* EntryEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDDFFF100AF6E1004CFB3C /* EntryEnumerator.h */; };
+		BACDE017100AF6E1004CFB3C /* EntryEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE000100AF6E1004CFB3C /* EntryEnumerator.m */; };
+		BACDE018100AF6E1004CFB3C /* ObjectEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE001100AF6E1004CFB3C /* ObjectEnumerator.h */; };
+		BACDE019100AF6E1004CFB3C /* ObjectEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE002100AF6E1004CFB3C /* ObjectEnumerator.m */; };
+		BACDE01A100AF6E1004CFB3C /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE003100AF6E1004CFB3C /* Node.h */; };
+		BACDE01B100AF6E1004CFB3C /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE004100AF6E1004CFB3C /* Node.m */; };
+		BACDE01C100AF6E1004CFB3C /* NSString+Indent.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE005100AF6E1004CFB3C /* NSString+Indent.h */; };
+		BACDE01D100AF6E1004CFB3C /* NSString+Indent.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE006100AF6E1004CFB3C /* NSString+Indent.m */; };
+		BACDE01E100AF6E1004CFB3C /* SortedDictionary+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE007100AF6E1004CFB3C /* SortedDictionary+Private.h */; };
+		BACDE01F100AF6E1004CFB3C /* SortedDictionary+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE008100AF6E1004CFB3C /* SortedDictionary+Private.m */; };
+		BACDE020100AF6E1004CFB3C /* MutableSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00A100AF6E1004CFB3C /* MutableSortedDictionary.h */; };
+		BACDE021100AF6E1004CFB3C /* MutableSortedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE00B100AF6E1004CFB3C /* MutableSortedDictionary.m */; };
+		BACDE024100AF6E1004CFB3C /* SortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00E100AF6E1004CFB3C /* SortedDictionary.h */; };
+		BACDE025100AF6E1004CFB3C /* SortedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE00F100AF6E1004CFB3C /* SortedDictionary.m */; };
+		BACDE035100AF7A5004CFB3C /* SortedDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* SortedDictionary.framework */; };
+		BACDE055100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04B100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m */; };
+		BACDE056100AF83E004CFB3C /* SortedDictionary+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04D100AF83E004CFB3C /* SortedDictionary+Test.m */; };
+		BACDE057100AF83E004CFB3C /* SortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04F100AF83E004CFB3C /* SortedDictionaryContentTests.m */; };
+		BACDE058100AF83E004CFB3C /* SortedDictionaryCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE051100AF83E004CFB3C /* SortedDictionaryCreationTests.m */; };
+		BACDE059100AF83E004CFB3C /* SortedDictionaryInitializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE053100AF83E004CFB3C /* SortedDictionaryInitializationTests.m */; };
+		BACDE11510103C15004CFB3C /* AvlTree+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE11310103C15004CFB3C /* AvlTree+Private.h */; };
+		BACDE11610103C15004CFB3C /* AvlTree+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE11410103C15004CFB3C /* AvlTree+Private.m */; };
+		BACDE11F10103F09004CFB3C /* SortedDictionaryProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE11E10103F09004CFB3C /* SortedDictionaryProtocolTests.m */; };
+		BACDE2131011834C004CFB3C /* SortedDictionaryEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE2111011834C004CFB3C /* SortedDictionaryEntry.h */; };
+		BACDE2681011894E004CFB3C /* EntryEnumerator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE2661011894E004CFB3C /* EntryEnumerator+Private.h */; };
+		BACDE2691011894E004CFB3C /* EntryEnumerator+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE2671011894E004CFB3C /* EntryEnumerator+Private.m */; };
+		BACDE3E710124985004CFB3C /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE3E510124985004CFB3C /* common.h */; };
+		BACDE3E810124985004CFB3C /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE3E610124985004CFB3C /* common.m */; };
+		BACDE40B10125302004CFB3C /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = BACDE40A10125302004CFB3C /* test.plist */; };
+		BACDE46B10129796004CFB3C /* PropertyListReader.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE46910129796004CFB3C /* PropertyListReader.h */; };
+		BACDE46C10129796004CFB3C /* PropertyListReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE46A10129796004CFB3C /* PropertyListReader.m */; };
+		BACDE4F31013BD22004CFB3C /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE4F11013BD22004CFB3C /* NSString+Base64.h */; };
+		BACDE4F41013BD22004CFB3C /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE4F21013BD22004CFB3C /* NSString+Base64.m */; };
+		BACDE4FA1013C32C004CFB3C /* NSStringExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE4F91013C32C004CFB3C /* NSStringExtensionsTests.m */; };
+		BACDE67B10156A12004CFB3C /* SortedDictionarySerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE67A10156A12004CFB3C /* SortedDictionarySerializationTests.m */; };
+		BACDE6A110157558004CFB3C /* PropertyListWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE69F10157558004CFB3C /* PropertyListWriter.h */; };
+		BACDE6A210157558004CFB3C /* PropertyListWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE6A010157558004CFB3C /* PropertyListWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BACDE033100AF7A0004CFB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = SortedDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* SortedDictionary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionary_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* SortedDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SortedDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACDDFF8100AF6E1004CFB3C /* AvlTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvlTree.h; sourceTree = "<group>"; };
+		BACDDFF9100AF6E1004CFB3C /* AvlTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvlTree.m; sourceTree = "<group>"; };
+		BACDDFFD100AF6E1004CFB3C /* KeyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyEnumerator.h; sourceTree = "<group>"; };
+		BACDDFFE100AF6E1004CFB3C /* KeyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyEnumerator.m; sourceTree = "<group>"; };
+		BACDDFFF100AF6E1004CFB3C /* EntryEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEnumerator.h; sourceTree = "<group>"; };
+		BACDE000100AF6E1004CFB3C /* EntryEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEnumerator.m; sourceTree = "<group>"; };
+		BACDE001100AF6E1004CFB3C /* ObjectEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectEnumerator.h; sourceTree = "<group>"; };
+		BACDE002100AF6E1004CFB3C /* ObjectEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectEnumerator.m; sourceTree = "<group>"; };
+		BACDE003100AF6E1004CFB3C /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		BACDE004100AF6E1004CFB3C /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		BACDE005100AF6E1004CFB3C /* NSString+Indent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Indent.h"; sourceTree = "<group>"; };
+		BACDE006100AF6E1004CFB3C /* NSString+Indent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Indent.m"; sourceTree = "<group>"; };
+		BACDE007100AF6E1004CFB3C /* SortedDictionary+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SortedDictionary+Private.h"; sourceTree = "<group>"; };
+		BACDE008100AF6E1004CFB3C /* SortedDictionary+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SortedDictionary+Private.m"; sourceTree = "<group>"; };
+		BACDE00A100AF6E1004CFB3C /* MutableSortedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableSortedDictionary.h; sourceTree = "<group>"; };
+		BACDE00B100AF6E1004CFB3C /* MutableSortedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableSortedDictionary.m; sourceTree = "<group>"; };
+		BACDE00E100AF6E1004CFB3C /* SortedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionary.h; sourceTree = "<group>"; };
+		BACDE00F100AF6E1004CFB3C /* SortedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionary.m; sourceTree = "<group>"; };
+		BACDE02D100AF79A004CFB3C /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACDE02E100AF79A004CFB3C /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		BACDE04A100AF83E004CFB3C /* MutableSortedDictionaryContentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableSortedDictionaryContentTests.h; sourceTree = "<group>"; };
+		BACDE04B100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableSortedDictionaryContentTests.m; sourceTree = "<group>"; };
+		BACDE04C100AF83E004CFB3C /* SortedDictionary+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SortedDictionary+Test.h"; sourceTree = "<group>"; };
+		BACDE04D100AF83E004CFB3C /* SortedDictionary+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SortedDictionary+Test.m"; sourceTree = "<group>"; };
+		BACDE04E100AF83E004CFB3C /* SortedDictionaryContentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryContentTests.h; sourceTree = "<group>"; };
+		BACDE04F100AF83E004CFB3C /* SortedDictionaryContentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryContentTests.m; sourceTree = "<group>"; };
+		BACDE050100AF83E004CFB3C /* SortedDictionaryCreationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryCreationTests.h; sourceTree = "<group>"; };
+		BACDE051100AF83E004CFB3C /* SortedDictionaryCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryCreationTests.m; sourceTree = "<group>"; };
+		BACDE052100AF83E004CFB3C /* SortedDictionaryInitializationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryInitializationTests.h; sourceTree = "<group>"; };
+		BACDE053100AF83E004CFB3C /* SortedDictionaryInitializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryInitializationTests.m; sourceTree = "<group>"; };
+		BACDE07D100AFA7F004CFB3C /* doxygen.config */ = {isa = PBXFileReference; explicitFileType = text.script; fileEncoding = 4; path = doxygen.config; sourceTree = "<group>"; };
+		BACDE11310103C15004CFB3C /* AvlTree+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AvlTree+Private.h"; sourceTree = "<group>"; };
+		BACDE11410103C15004CFB3C /* AvlTree+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AvlTree+Private.m"; sourceTree = "<group>"; };
+		BACDE11D10103F09004CFB3C /* SortedDictionaryProtocolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryProtocolTests.h; sourceTree = "<group>"; };
+		BACDE11E10103F09004CFB3C /* SortedDictionaryProtocolTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryProtocolTests.m; sourceTree = "<group>"; };
+		BACDE2111011834C004CFB3C /* SortedDictionaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryEntry.h; sourceTree = "<group>"; };
+		BACDE2661011894E004CFB3C /* EntryEnumerator+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EntryEnumerator+Private.h"; sourceTree = "<group>"; };
+		BACDE2671011894E004CFB3C /* EntryEnumerator+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EntryEnumerator+Private.m"; sourceTree = "<group>"; };
+		BACDE3E510124985004CFB3C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		BACDE3E610124985004CFB3C /* common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = common.m; sourceTree = "<group>"; };
+		BACDE40A10125302004CFB3C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test.plist; path = UnitTests/test.plist; sourceTree = "<group>"; };
+		BACDE46910129796004CFB3C /* PropertyListReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListReader.h; sourceTree = "<group>"; };
+		BACDE46A10129796004CFB3C /* PropertyListReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListReader.m; sourceTree = "<group>"; };
+		BACDE4F11013BD22004CFB3C /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		BACDE4F21013BD22004CFB3C /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		BACDE4F81013C32C004CFB3C /* NSStringExtensionsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtensionsTests.h; sourceTree = "<group>"; };
+		BACDE4F91013C32C004CFB3C /* NSStringExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensionsTests.m; sourceTree = "<group>"; };
+		BACDE67910156A12004CFB3C /* SortedDictionarySerializationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionarySerializationTests.h; sourceTree = "<group>"; };
+		BACDE67A10156A12004CFB3C /* SortedDictionarySerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionarySerializationTests.m; sourceTree = "<group>"; };
+		BACDE69F10157558004CFB3C /* PropertyListWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListWriter.h; sourceTree = "<group>"; };
+		BACDE6A010157558004CFB3C /* PropertyListWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListWriter.m; sourceTree = "<group>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACDE02A100AF79A004CFB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDE035100AF7A5004CFB3C /* SortedDictionary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* SortedDictionary.framework */,
+				BACDE02D100AF79A004CFB3C /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SortedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SortedDictionary;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BACDE02E100AF79A004CFB3C /* UnitTests-Info.plist */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				BACDE40A10125302004CFB3C /* test.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BACDDFF6100AF6E1004CFB3C /* SortedDictionary */,
+				BACDE048100AF83E004CFB3C /* UnitTests */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BACDE07D100AFA7F004CFB3C /* doxygen.config */,
+				32DBCF5E0370ADEE00C91783 /* SortedDictionary_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BACDDFF6100AF6E1004CFB3C /* SortedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BACDDFF7100AF6E1004CFB3C /* Internal */,
+				BACDE009100AF6E1004CFB3C /* Public */,
+			);
+			path = SortedDictionary;
+			sourceTree = "<group>";
+		};
+		BACDDFF7100AF6E1004CFB3C /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				BACDDFF8100AF6E1004CFB3C /* AvlTree.h */,
+				BACDDFF9100AF6E1004CFB3C /* AvlTree.m */,
+				BACDE11310103C15004CFB3C /* AvlTree+Private.h */,
+				BACDE11410103C15004CFB3C /* AvlTree+Private.m */,
+				BACDE3E510124985004CFB3C /* common.h */,
+				BACDE3E610124985004CFB3C /* common.m */,
+				BACDE003100AF6E1004CFB3C /* Node.h */,
+				BACDE004100AF6E1004CFB3C /* Node.m */,
+				BACDE4F11013BD22004CFB3C /* NSString+Base64.h */,
+				BACDE4F21013BD22004CFB3C /* NSString+Base64.m */,
+				BACDE005100AF6E1004CFB3C /* NSString+Indent.h */,
+				BACDE006100AF6E1004CFB3C /* NSString+Indent.m */,
+				BACDE007100AF6E1004CFB3C /* SortedDictionary+Private.h */,
+				BACDE008100AF6E1004CFB3C /* SortedDictionary+Private.m */,
+				BACDDFFA100AF6E1004CFB3C /* Enumerators */,
+				BACDE46810129755004CFB3C /* Serialization */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		BACDDFFA100AF6E1004CFB3C /* Enumerators */ = {
+			isa = PBXGroup;
+			children = (
+				BACDDFFD100AF6E1004CFB3C /* KeyEnumerator.h */,
+				BACDDFFE100AF6E1004CFB3C /* KeyEnumerator.m */,
+				BACDDFFF100AF6E1004CFB3C /* EntryEnumerator.h */,
+				BACDE000100AF6E1004CFB3C /* EntryEnumerator.m */,
+				BACDE2661011894E004CFB3C /* EntryEnumerator+Private.h */,
+				BACDE2671011894E004CFB3C /* EntryEnumerator+Private.m */,
+				BACDE001100AF6E1004CFB3C /* ObjectEnumerator.h */,
+				BACDE002100AF6E1004CFB3C /* ObjectEnumerator.m */,
+			);
+			path = Enumerators;
+			sourceTree = "<group>";
+		};
+		BACDE009100AF6E1004CFB3C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BACDE00A100AF6E1004CFB3C /* MutableSortedDictionary.h */,
+				BACDE00B100AF6E1004CFB3C /* MutableSortedDictionary.m */,
+				BACDE00E100AF6E1004CFB3C /* SortedDictionary.h */,
+				BACDE00F100AF6E1004CFB3C /* SortedDictionary.m */,
+				BACDE2111011834C004CFB3C /* SortedDictionaryEntry.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BACDE048100AF83E004CFB3C /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BACDE04A100AF83E004CFB3C /* MutableSortedDictionaryContentTests.h */,
+				BACDE04B100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m */,
+				BACDE4F81013C32C004CFB3C /* NSStringExtensionsTests.h */,
+				BACDE4F91013C32C004CFB3C /* NSStringExtensionsTests.m */,
+				BACDE04C100AF83E004CFB3C /* SortedDictionary+Test.h */,
+				BACDE04D100AF83E004CFB3C /* SortedDictionary+Test.m */,
+				BACDE04E100AF83E004CFB3C /* SortedDictionaryContentTests.h */,
+				BACDE04F100AF83E004CFB3C /* SortedDictionaryContentTests.m */,
+				BACDE050100AF83E004CFB3C /* SortedDictionaryCreationTests.h */,
+				BACDE051100AF83E004CFB3C /* SortedDictionaryCreationTests.m */,
+				BACDE052100AF83E004CFB3C /* SortedDictionaryInitializationTests.h */,
+				BACDE053100AF83E004CFB3C /* SortedDictionaryInitializationTests.m */,
+				BACDE11D10103F09004CFB3C /* SortedDictionaryProtocolTests.h */,
+				BACDE11E10103F09004CFB3C /* SortedDictionaryProtocolTests.m */,
+				BACDE67910156A12004CFB3C /* SortedDictionarySerializationTests.h */,
+				BACDE67A10156A12004CFB3C /* SortedDictionarySerializationTests.m */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		BACDE46810129755004CFB3C /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				BACDE46910129796004CFB3C /* PropertyListReader.h */,
+				BACDE46A10129796004CFB3C /* PropertyListReader.m */,
+				BACDE69F10157558004CFB3C /* PropertyListWriter.h */,
+				BACDE6A010157558004CFB3C /* PropertyListWriter.m */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDE010100AF6E1004CFB3C /* AvlTree.h in Headers */,
+				BACDE014100AF6E1004CFB3C /* KeyEnumerator.h in Headers */,
+				BACDE016100AF6E1004CFB3C /* EntryEnumerator.h in Headers */,
+				BACDE018100AF6E1004CFB3C /* ObjectEnumerator.h in Headers */,
+				BACDE01A100AF6E1004CFB3C /* Node.h in Headers */,
+				BACDE01C100AF6E1004CFB3C /* NSString+Indent.h in Headers */,
+				BACDE01E100AF6E1004CFB3C /* SortedDictionary+Private.h in Headers */,
+				BACDE020100AF6E1004CFB3C /* MutableSortedDictionary.h in Headers */,
+				BACDE024100AF6E1004CFB3C /* SortedDictionary.h in Headers */,
+				BACDE11510103C15004CFB3C /* AvlTree+Private.h in Headers */,
+				BACDE2131011834C004CFB3C /* SortedDictionaryEntry.h in Headers */,
+				BACDE2681011894E004CFB3C /* EntryEnumerator+Private.h in Headers */,
+				BACDE3E710124985004CFB3C /* common.h in Headers */,
+				BACDE46B10129796004CFB3C /* PropertyListReader.h in Headers */,
+				BACDE4F31013BD22004CFB3C /* NSString+Base64.h in Headers */,
+				BACDE6A110157558004CFB3C /* PropertyListWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* SortedDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SortedDictionary" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				BACDE068100AFA10004CFB3C /* Compile Documentation */,
+				BA81A63F10181BB9007A2DE1 /* Compile Internal Documentation */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortedDictionary;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = SortedDictionary;
+			productReference = 8DC2EF5B0486A6940098B216 /* SortedDictionary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BACDE02C100AF79A004CFB3C /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACDE032100AF79A004CFB3C /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				BACDE028100AF79A004CFB3C /* Resources */,
+				BACDE029100AF79A004CFB3C /* Sources */,
+				BACDE02A100AF79A004CFB3C /* Frameworks */,
+				BACDE02B100AF79A004CFB3C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACDE034100AF7A0004CFB3C /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = BACDE02D100AF79A004CFB3C /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SortedDictionary" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* SortedDictionary */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* SortedDictionary */,
+				BACDE02C100AF79A004CFB3C /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACDE028100AF79A004CFB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDE40B10125302004CFB3C /* test.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA81A63F10181BB9007A2DE1 /* Compile Internal Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Internal Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen-internal.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen-internal.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen-internal.config $TEMP_DIR/doxygen-internal.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen-internal.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/docs\" >> $TEMP_DIR/doxygen-internal.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen-internal.config\necho \"DOCSET_BUNDLE_ID       = OrderedDictionary\" >> $TEMP_DIR/doxygen-internal.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n# $DOXYGEN_PATH $TEMP_DIR/doxygen-internal.config\n$DOXYGEN_PATH $SOURCE_ROOT/doxygen-internal.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $SOURCE_ROOT/docs/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\n# rm -f $TEMP_DIR/loadDocSet.scpt\n\n# echo \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\n# echo \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\n# echo \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\n# osascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
+		};
+		BACDE02B100AF79A004CFB3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		BACDE068100AFA10004CFB3C /* Compile Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Create documentation.";
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"DOCSET_BUNDLE_ID       = OrderedDictionary\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n# $DOXYGEN_PATH $TEMP_DIR/doxygen.config\n$DOXYGEN_PATH $SOURCE_ROOT/doxygen.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f $TEMP_DIR/loadDocSet.scpt\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\nosascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDE011100AF6E1004CFB3C /* AvlTree.m in Sources */,
+				BACDE015100AF6E1004CFB3C /* KeyEnumerator.m in Sources */,
+				BACDE017100AF6E1004CFB3C /* EntryEnumerator.m in Sources */,
+				BACDE019100AF6E1004CFB3C /* ObjectEnumerator.m in Sources */,
+				BACDE01B100AF6E1004CFB3C /* Node.m in Sources */,
+				BACDE01D100AF6E1004CFB3C /* NSString+Indent.m in Sources */,
+				BACDE01F100AF6E1004CFB3C /* SortedDictionary+Private.m in Sources */,
+				BACDE021100AF6E1004CFB3C /* MutableSortedDictionary.m in Sources */,
+				BACDE025100AF6E1004CFB3C /* SortedDictionary.m in Sources */,
+				BACDE11610103C15004CFB3C /* AvlTree+Private.m in Sources */,
+				BACDE2691011894E004CFB3C /* EntryEnumerator+Private.m in Sources */,
+				BACDE3E810124985004CFB3C /* common.m in Sources */,
+				BACDE46C10129796004CFB3C /* PropertyListReader.m in Sources */,
+				BACDE4F41013BD22004CFB3C /* NSString+Base64.m in Sources */,
+				BACDE6A210157558004CFB3C /* PropertyListWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACDE029100AF79A004CFB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDE055100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m in Sources */,
+				BACDE056100AF83E004CFB3C /* SortedDictionary+Test.m in Sources */,
+				BACDE057100AF83E004CFB3C /* SortedDictionaryContentTests.m in Sources */,
+				BACDE058100AF83E004CFB3C /* SortedDictionaryCreationTests.m in Sources */,
+				BACDE059100AF83E004CFB3C /* SortedDictionaryInitializationTests.m in Sources */,
+				BACDE11F10103F09004CFB3C /* SortedDictionaryProtocolTests.m in Sources */,
+				BACDE4FA1013C32C004CFB3C /* NSStringExtensionsTests.m in Sources */,
+				BACDE67B10156A12004CFB3C /* SortedDictionarySerializationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACDE034100AF7A0004CFB3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* SortedDictionary */;
+			targetProxy = BACDE033100AF7A0004CFB3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SortedDictionary_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SortedDictionary;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SortedDictionary_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SortedDictionary;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		BA81A681101822E5007A2DE1 /* Debug and Documentation */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = "Debug and Documentation";
+		};
+		BA81A682101822E5007A2DE1 /* Debug and Documentation */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SortedDictionary_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SortedDictionary;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = "Debug and Documentation";
+		};
+		BA81A683101822E5007A2DE1 /* Debug and Documentation */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Debug and Documentation";
+		};
+		BACDE030100AF79A004CFB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BACDE031100AF79A004CFB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SortedDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				BA81A682101822E5007A2DE1 /* Debug and Documentation */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SortedDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				BA81A681101822E5007A2DE1 /* Debug and Documentation */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACDE032100AF79A004CFB3C /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACDE030100AF79A004CFB3C /* Debug */,
+				BA81A683101822E5007A2DE1 /* Debug and Documentation */,
+				BACDE031100AF79A004CFB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
