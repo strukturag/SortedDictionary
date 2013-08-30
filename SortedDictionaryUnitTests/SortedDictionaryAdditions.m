@@ -3,7 +3,7 @@
 //  SortedDictionary
 //
 //  Created by Yuriy Shevchuk on 8/30/13.
-//
+//	Copyright (c) 2013 struktur. All rights reserved.
 //
 
 #import "SortedDictionaryAdditions.h"
