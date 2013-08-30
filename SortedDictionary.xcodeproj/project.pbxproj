@@ -26,6 +26,18 @@
 		5B9F01D717D0853000FDD690 /* MutableSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00A100AF6E1004CFB3C /* MutableSortedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B9F01D817D0853000FDD690 /* SortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00E100AF6E1004CFB3C /* SortedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B9F01D917D0853000FDD690 /* SortedDictionaryEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE2111011834C004CFB3C /* SortedDictionaryEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9F01E117D08D5900FDD690 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9F01E017D08D5900FDD690 /* SenTestingKit.framework */; };
+		5B9F01E317D08D5900FDD690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9F01E217D08D5900FDD690 /* UIKit.framework */; };
+		5B9F01E417D08D5900FDD690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9F01A917CFA39800FDD690 /* Foundation.framework */; };
+		5B9F01EA17D08D5900FDD690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F01E817D08D5900FDD690 /* InfoPlist.strings */; };
+		5B9F020317D08DCE00FDD690 /* MutableSortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01F417D08DCD00FDD690 /* MutableSortedDictionaryContentTests.m */; };
+		5B9F020417D08DCE00FDD690 /* NSStringExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01F617D08DCE00FDD690 /* NSStringExtensionsTests.m */; };
+		5B9F020517D08DCE00FDD690 /* SortedDictionary+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01F817D08DCE00FDD690 /* SortedDictionary+Test.m */; };
+		5B9F020617D08DCE00FDD690 /* SortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01FA17D08DCE00FDD690 /* SortedDictionaryContentTests.m */; };
+		5B9F020717D08DCE00FDD690 /* SortedDictionaryCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01FC17D08DCE00FDD690 /* SortedDictionaryCreationTests.m */; };
+		5B9F020817D08DCE00FDD690 /* SortedDictionaryInitializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F01FE17D08DCE00FDD690 /* SortedDictionaryInitializationTests.m */; };
+		5B9F020917D08DCE00FDD690 /* SortedDictionaryProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F020017D08DCE00FDD690 /* SortedDictionaryProtocolTests.m */; };
+		5B9F020A17D08DCE00FDD690 /* SortedDictionarySerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F020217D08DCE00FDD690 /* SortedDictionarySerializationTests.m */; };
 		BACDE055100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04B100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m */; };
 		BACDE056100AF83E004CFB3C /* SortedDictionary+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04D100AF83E004CFB3C /* SortedDictionary+Test.m */; };
 		BACDE057100AF83E004CFB3C /* SortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04F100AF83E004CFB3C /* SortedDictionaryContentTests.m */; };
@@ -54,6 +66,28 @@
 		5B9F01A717CFA39800FDD690 /* libSortedDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSortedDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9F01A917CFA39800FDD690 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B9F01AD17CFA39800FDD690 /* SortedDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SortedDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		5B9F01DF17D08D5900FDD690 /* SortedDictionaryUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortedDictionaryUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F01E017D08D5900FDD690 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B9F01E217D08D5900FDD690 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B9F01E717D08D5900FDD690 /* SortedDictionaryUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SortedDictionaryUnitTests-Info.plist"; sourceTree = "<group>"; };
+		5B9F01E917D08D5900FDD690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B9F01EE17D08D5900FDD690 /* SortedDictionaryUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SortedDictionaryUnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		5B9F01F317D08DCD00FDD690 /* MutableSortedDictionaryContentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableSortedDictionaryContentTests.h; sourceTree = "<group>"; };
+		5B9F01F417D08DCD00FDD690 /* MutableSortedDictionaryContentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableSortedDictionaryContentTests.m; sourceTree = "<group>"; };
+		5B9F01F517D08DCD00FDD690 /* NSStringExtensionsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtensionsTests.h; sourceTree = "<group>"; };
+		5B9F01F617D08DCE00FDD690 /* NSStringExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensionsTests.m; sourceTree = "<group>"; };
+		5B9F01F717D08DCE00FDD690 /* SortedDictionary+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SortedDictionary+Test.h"; sourceTree = "<group>"; };
+		5B9F01F817D08DCE00FDD690 /* SortedDictionary+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SortedDictionary+Test.m"; sourceTree = "<group>"; };
+		5B9F01F917D08DCE00FDD690 /* SortedDictionaryContentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryContentTests.h; sourceTree = "<group>"; };
+		5B9F01FA17D08DCE00FDD690 /* SortedDictionaryContentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryContentTests.m; sourceTree = "<group>"; };
+		5B9F01FB17D08DCE00FDD690 /* SortedDictionaryCreationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryCreationTests.h; sourceTree = "<group>"; };
+		5B9F01FC17D08DCE00FDD690 /* SortedDictionaryCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryCreationTests.m; sourceTree = "<group>"; };
+		5B9F01FD17D08DCE00FDD690 /* SortedDictionaryInitializationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryInitializationTests.h; sourceTree = "<group>"; };
+		5B9F01FE17D08DCE00FDD690 /* SortedDictionaryInitializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryInitializationTests.m; sourceTree = "<group>"; };
+		5B9F01FF17D08DCE00FDD690 /* SortedDictionaryProtocolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionaryProtocolTests.h; sourceTree = "<group>"; };
+		5B9F020017D08DCE00FDD690 /* SortedDictionaryProtocolTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionaryProtocolTests.m; sourceTree = "<group>"; };
+		5B9F020117D08DCE00FDD690 /* SortedDictionarySerializationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedDictionarySerializationTests.h; sourceTree = "<group>"; };
+		5B9F020217D08DCE00FDD690 /* SortedDictionarySerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortedDictionarySerializationTests.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BACDDFF8100AF6E1004CFB3C /* AvlTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvlTree.h; sourceTree = "<group>"; };
 		BACDDFF9100AF6E1004CFB3C /* AvlTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvlTree.m; sourceTree = "<group>"; };
@@ -117,6 +151,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B9F01DB17D08D5900FDD690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F01E117D08D5900FDD690 /* SenTestingKit.framework in Frameworks */,
+				5B9F01E317D08D5900FDD690 /* UIKit.framework in Frameworks */,
+				5B9F01E417D08D5900FDD690 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACDE02A100AF79A004CFB3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +176,7 @@
 			children = (
 				BACDE02D100AF79A004CFB3C /* UnitTests.octest */,
 				5B9F01A717CFA39800FDD690 /* libSortedDictionary.a */,
+				5B9F01DF17D08D5900FDD690 /* SortedDictionaryUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +186,7 @@
 			children = (
 				5B9F01AB17CFA39800FDD690 /* SortedDictionary */,
 				089C1665FE841158C02AAC07 /* Resources */,
+				5B9F01E517D08D5900FDD690 /* SortedDictionaryUnitTests */,
 				5B9F01A817CFA39800FDD690 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -172,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				5B9F01A917CFA39800FDD690 /* Foundation.framework */,
+				5B9F01E017D08D5900FDD690 /* SenTestingKit.framework */,
+				5B9F01E217D08D5900FDD690 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +238,40 @@
 			children = (
 				BACDE07D100AFA7F004CFB3C /* doxygen.config */,
 				5B9F01AD17CFA39800FDD690 /* SortedDictionary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B9F01E517D08D5900FDD690 /* SortedDictionaryUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F01F317D08DCD00FDD690 /* MutableSortedDictionaryContentTests.h */,
+				5B9F01F417D08DCD00FDD690 /* MutableSortedDictionaryContentTests.m */,
+				5B9F01F517D08DCD00FDD690 /* NSStringExtensionsTests.h */,
+				5B9F01F617D08DCE00FDD690 /* NSStringExtensionsTests.m */,
+				5B9F01F717D08DCE00FDD690 /* SortedDictionary+Test.h */,
+				5B9F01F817D08DCE00FDD690 /* SortedDictionary+Test.m */,
+				5B9F01F917D08DCE00FDD690 /* SortedDictionaryContentTests.h */,
+				5B9F01FA17D08DCE00FDD690 /* SortedDictionaryContentTests.m */,
+				5B9F01FB17D08DCE00FDD690 /* SortedDictionaryCreationTests.h */,
+				5B9F01FC17D08DCE00FDD690 /* SortedDictionaryCreationTests.m */,
+				5B9F01FD17D08DCE00FDD690 /* SortedDictionaryInitializationTests.h */,
+				5B9F01FE17D08DCE00FDD690 /* SortedDictionaryInitializationTests.m */,
+				5B9F01FF17D08DCE00FDD690 /* SortedDictionaryProtocolTests.h */,
+				5B9F020017D08DCE00FDD690 /* SortedDictionaryProtocolTests.m */,
+				5B9F020117D08DCE00FDD690 /* SortedDictionarySerializationTests.h */,
+				5B9F020217D08DCE00FDD690 /* SortedDictionarySerializationTests.m */,
+				5B9F01E617D08D5900FDD690 /* Supporting Files */,
+			);
+			path = SortedDictionaryUnitTests;
+			sourceTree = "<group>";
+		};
+		5B9F01E617D08D5900FDD690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F01E717D08D5900FDD690 /* SortedDictionaryUnitTests-Info.plist */,
+				5B9F01E817D08D5900FDD690 /* InfoPlist.strings */,
+				5B9F01EE17D08D5900FDD690 /* SortedDictionaryUnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -321,6 +403,24 @@
 			productReference = 5B9F01A717CFA39800FDD690 /* libSortedDictionary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		5B9F01DE17D08D5900FDD690 /* SortedDictionaryUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F01EF17D08D5900FDD690 /* Build configuration list for PBXNativeTarget "SortedDictionaryUnitTests" */;
+			buildPhases = (
+				5B9F01DA17D08D5900FDD690 /* Sources */,
+				5B9F01DB17D08D5900FDD690 /* Frameworks */,
+				5B9F01DC17D08D5900FDD690 /* Resources */,
+				5B9F01DD17D08D5900FDD690 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortedDictionaryUnitTests;
+			productName = SortedDictionaryUnitTests;
+			productReference = 5B9F01DF17D08D5900FDD690 /* SortedDictionaryUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BACDE02C100AF79A004CFB3C /* UnitTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BACDE032100AF79A004CFB3C /* Build configuration list for PBXNativeTarget "UnitTests" */;
@@ -358,11 +458,20 @@
 			targets = (
 				5B9F01A617CFA39800FDD690 /* SortedDictionary */,
 				BACDE02C100AF79A004CFB3C /* UnitTests */,
+				5B9F01DE17D08D5900FDD690 /* SortedDictionaryUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B9F01DC17D08D5900FDD690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F01EA17D08D5900FDD690 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACDE028100AF79A004CFB3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +483,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B9F01DD17D08D5900FDD690 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		BACDE02B100AF79A004CFB3C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +534,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B9F01DA17D08D5900FDD690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F020317D08DCE00FDD690 /* MutableSortedDictionaryContentTests.m in Sources */,
+				5B9F020417D08DCE00FDD690 /* NSStringExtensionsTests.m in Sources */,
+				5B9F020517D08DCE00FDD690 /* SortedDictionary+Test.m in Sources */,
+				5B9F020617D08DCE00FDD690 /* SortedDictionaryContentTests.m in Sources */,
+				5B9F020717D08DCE00FDD690 /* SortedDictionaryCreationTests.m in Sources */,
+				5B9F020817D08DCE00FDD690 /* SortedDictionaryInitializationTests.m in Sources */,
+				5B9F020917D08DCE00FDD690 /* SortedDictionaryProtocolTests.m in Sources */,
+				5B9F020A17D08DCE00FDD690 /* SortedDictionarySerializationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACDE029100AF79A004CFB3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +571,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B9F01E817D08D5900FDD690 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9F01E917D08D5900FDD690 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -574,6 +719,103 @@
 			};
 			name = Release;
 		};
+		5B9F01F017D08D5900FDD690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5B9F01F117D08D5900FDD690 /* Debug and Documentation */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Debug and Documentation";
+		};
+		5B9F01F217D08D5900FDD690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "SortedDictionaryUnitTests/SortedDictionaryUnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		BA81A681101822E5007A2DE1 /* Debug and Documentation */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -690,6 +932,15 @@
 				5B9F01B317CFA39800FDD690 /* Debug */,
 				5B9F01B417CFA39800FDD690 /* Debug and Documentation */,
 				5B9F01B517CFA39800FDD690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B9F01EF17D08D5900FDD690 /* Build configuration list for PBXNativeTarget "SortedDictionaryUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F01F017D08D5900FDD690 /* Debug */,
+				5B9F01F117D08D5900FDD690 /* Debug and Documentation */,
+				5B9F01F217D08D5900FDD690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
