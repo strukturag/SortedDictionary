@@ -23,6 +23,9 @@
 		5B9F01D117CFA45900FDD690 /* MutableSortedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE00B100AF6E1004CFB3C /* MutableSortedDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5B9F01D317CFA45900FDD690 /* SortedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE00F100AF6E1004CFB3C /* SortedDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5B9F01D517D0812900FDD690 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE3E610124985004CFB3C /* common.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B9F01D717D0853000FDD690 /* MutableSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00A100AF6E1004CFB3C /* MutableSortedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9F01D817D0853000FDD690 /* SortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE00E100AF6E1004CFB3C /* SortedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9F01D917D0853000FDD690 /* SortedDictionaryEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BACDE2111011834C004CFB3C /* SortedDictionaryEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BACDE055100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04B100AF83E004CFB3C /* MutableSortedDictionaryContentTests.m */; };
 		BACDE056100AF83E004CFB3C /* SortedDictionary+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04D100AF83E004CFB3C /* SortedDictionary+Test.m */; };
 		BACDE057100AF83E004CFB3C /* SortedDictionaryContentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDE04F100AF83E004CFB3C /* SortedDictionaryContentTests.m */; };
@@ -286,6 +289,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5B9F01D617D084A500FDD690 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F01D717D0853000FDD690 /* MutableSortedDictionary.h in Headers */,
+				5B9F01D817D0853000FDD690 /* SortedDictionary.h in Headers */,
+				5B9F01D917D0853000FDD690 /* SortedDictionaryEntry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		5B9F01A617CFA39800FDD690 /* SortedDictionary */ = {
 			isa = PBXNativeTarget;
@@ -294,6 +310,7 @@
 				5B9F01A317CFA39800FDD690 /* Sources */,
 				5B9F01A417CFA39800FDD690 /* Frameworks */,
 				5B9F01A517CFA39800FDD690 /* CopyFiles */,
+				5B9F01D617D084A500FDD690 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -433,6 +450,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -447,6 +465,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -465,7 +484,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/SortedDictionary.dst;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(PROJECT_DIR)/install";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -476,10 +496,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				INSTALL_PATH = /;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -496,7 +520,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/SortedDictionary.dst;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(PROJECT_DIR)/install";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -507,10 +532,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				INSTALL_PATH = /;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 			};
 			name = "Debug and Documentation";
 		};
@@ -527,15 +556,20 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/SortedDictionary.dst;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(PROJECT_DIR)/install";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SortedDictionary/SortedDictionary-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				INSTALL_PATH = /;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -549,6 +583,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
