@@ -44,8 +44,8 @@
 	if (self = [self init]) {
 		id key, value;
 		
-		if (value = firstObject) {
-			if (key = va_arg(arglist, id)) {
+		if ((value = firstObject)) {
+			if ((key = va_arg(arglist, id))) {
 				do {
 					if (!key || !value) {
 						@throw [NSException exceptionWithName: NSInvalidArgumentException

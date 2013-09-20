@@ -78,7 +78,7 @@
 
 - (Node *) lastNodeFrom: (Node *) first usingSelector: (SEL) next {
 	Node *node = first, *nextNode;
-	while (nextNode = [node performSelector: next]) { node = nextNode; } 
+	while ((nextNode = [node performSelector: next])) { node = nextNode; }
 	return node;
 }
 

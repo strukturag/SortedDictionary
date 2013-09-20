@@ -53,7 +53,7 @@
 	Node *nextNode = [node performSelector: second];
 	if (nextNode) {
 		node = nextNode;
-		while (nextNode = [node performSelector: first]) { node = nextNode; }
+		while ((nextNode = [node performSelector: first])) { node = nextNode; }
 	}
 	
 	// ...or scan for the next unenumerated parent otherwise.
